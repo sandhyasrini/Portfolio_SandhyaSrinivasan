@@ -1,9 +1,61 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing:before {
+  content: "<h1>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -2rem;
+  left: 4rem;
+}
+.description:before {
+    content: "<p>";
+    font-family: "La Belle Aurore", cursive;
+    color: #515152;
+    font-size: 16px;
+    position: absolute;
+    margin-top: -1.5rem;
+    left: 4.5rem;
+  }
+
+  .description:after {
+    content: '<p/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 16px;
+    position: absolute;
+    margin-top: 1.5rem;
+    left: 4.5rem
+}
+
+.landing:after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 1rem;
+    left: 4rem
+}
+
+.landing span {
+    text-shadow: 0 2px  #009d68;
+}
+
 
 body {
   background-color: #1d1d1d;
+  height: 100%;
 }
 
 
@@ -17,6 +69,52 @@ body {
   width: 1px;
 }
 
-.side-bar:after {
-  height: 350px;
+/* .expertiseHeader:after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  margin-left: 2rem;
+  width: 30rem;
+} */
+
+.expertiseHeader:before {
+  content: "<h2>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -2rem;
+  left: 4rem;
+}
+
+.expertiseHeader:after {
+  content: '<h2/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: 2rem;
+  left: 4rem
+}
+
+.about_me:before {
+  content: "<p>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 16px;
+  position: absolute;
+  margin-top: -1rem;
+  left: 4.5rem;
+}
+
+.about_me:after {
+  content: '<p/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 16px;
+  position: absolute;
+  left: 4.5rem
 }

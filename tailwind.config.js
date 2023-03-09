@@ -12,8 +12,11 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+      belle: ['La Belle Aurore', "cursive"],
+      shantell: ['Shantell Sans', "cursive"]
+    }
   },
-  plugins: [
-    require("flowbite/plugin")
-  ],
-}
+  plugins: [require("flowbite/plugin")],
+};
