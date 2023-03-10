@@ -2,13 +2,12 @@ import React from "react";
 import "../globals.css";
 import { about_me } from "@/utils/config";
 import ProgressBarComponent from "../components/ProgressBarComponent";
+import { SectionHeading } from "../components/SectionHeading";
 
 function Expertise() {
   return (
     <section id="expertise" className="my-[10rem] text-white">
-      <h2 className="expertiseHeader font-semibold text-2xl sm:text-4xl text-white font-poppins tracking-[0.15rem] my-[2rem]">
-        <span className="text-[#009d68] tracking-[0.15rem]">02. </span>Expertise
-      </h2>
+    <SectionHeading id="02." title="Expertise" />
       <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 my-[4rem] leading-8 text-justify">
         <div className="about_me px-5">
           {about_me.map((data, index) => {
