@@ -1,16 +1,20 @@
 "use client";
 import React from "react";
+import { useState, useEffect } from "react";
 import { Navbar, Button } from "flowbite-react";
 import { navLinks } from "../../utils/config";
+
 function NavbarComponent() {
+
   return (
-    <Navbar fluid={true} rounded={true} className="bg-[#1e1e1e] shadow-[#1b1b1c] shadow-lg">
+<div className="bg-[#1e1e1e] shadow-[#1b1b1c] shadow-lg">
+    <Navbar fluid={true} rounded={true} className="dark:bg-[#1f1f1f] shadow-[#1b1b1c] shadow-lg">
       <Navbar.Brand href="#">
         <span className="self-center whitespace-nowrap text-lg font-semibold text-white">
           Sandhya._
         </span>
       </Navbar.Brand>
-      <div className="flex md:order-2 align-middle bg-[#1d1d1d]">
+      <div className="flex md:order-2 align-middle">
         <button
           type="button"
           onClick={() => {
@@ -33,6 +37,7 @@ function NavbarComponent() {
         })}
       </Navbar.Collapse>
     </Navbar>
+    </div>
   );
 }
 

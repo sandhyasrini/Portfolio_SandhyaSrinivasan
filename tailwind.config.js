@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./node_modules/flowbite-react/**/*.js",
     "./node_modules/flowbite/**/*.js",
@@ -14,9 +15,9 @@ module.exports = {
     extend: {},
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
-      belle: ['La Belle Aurore', "cursive"],
-      shantell: ['Shantell Sans', "cursive"]
-    }
+      belle: ["La Belle Aurore", "cursive"],
+      shantell: ["Shantell Sans", "cursive"],
+    },
   },
   plugins: [require("flowbite/plugin")],
 };
