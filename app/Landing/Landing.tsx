@@ -12,7 +12,7 @@ export default function Landing() {
         <h1>Hi,</h1>
         <h1>
           I&#39;m{" "}
-          <span className="text-[#A82810] shadow-lg font-bold">S</span>
+          <span className="text-[#ed5444] font-bold">S</span>
           andhya,
         </h1>
         <h1>a Full Stack developer</h1>

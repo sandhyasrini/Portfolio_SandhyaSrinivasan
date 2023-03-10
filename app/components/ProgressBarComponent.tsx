@@ -3,7 +3,7 @@ import { skills } from '@/utils/config';
 
 function ProgressBarComponent() {
   return (
-    <div className="px-5">
+    <div className="px-0 sm:px-5 mt-[4rem] sm:mt-0">
     {skills.map((element, index) => {
       return (
         <article key={index} className="py-4">
