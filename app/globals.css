@@ -69,16 +69,16 @@ body {
   width: 1px;
 }
 
-/* .expertiseHeader:after {
+.side-bar:after {
   background-color: #fff;
   content: "";
   display: inline-block;
-  height: 1px;
+  height: 21rem;
   position: relative;
-  vertical-align: middle;
-  margin-left: 2rem;
-  width: 30rem;
-} */
+  vertical-align: sub;
+  width: 1px;
+}
+
 
 .expertiseHeader:before {
   content: "<h2>";
