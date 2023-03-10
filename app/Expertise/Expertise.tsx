@@ -12,7 +12,7 @@ function Expertise() {
         <div className="about_me px-5">
           {about_me.map((data, index) => {
             return (
-              <p key={index} className="my-[1rem]">
+              <p key={index} className="my-[1rem] font-thin text-lg">
                 {data.text}
                 {data.link_url && (
                   <a href={data.link_url} className="text-[#009d68]">
