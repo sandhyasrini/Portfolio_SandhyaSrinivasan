@@ -104,4 +104,7 @@ const experience = [
   }
 ]
 
-export { description, navLinks, about_me, skills, email , experience};
+const contact_me = ` I am currently looking for opportunities and If you'd like to discuss a project or potential job opportunity, please get in touch via email, twitter or LinkedIn
+`
+
+export { description, navLinks, about_me, skills, email , experience, contact_me};

@@ -22,12 +22,11 @@ export default function Landing() {
       >
         {description}
       </p>
-      <button
-        type="button"
-        className="text-[#009d68] w-[40%] text-[0.5rem] sm:w-[40%] sm:text-[1rem] sm:text-lg h-[100%] md:w-[20%] transition ease-in-out delay-150 bg-gray border border-[#009d68] focus:outline-none hover:bg-[#009d68] hover:text-white focus:ring-4 hover:-translate-y-1 hover:scale-110 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 align-middle"
+      <a href="/#contact"
+        className="text-[#009d68] w-[40%] text-[0.5rem] sm:w-[40%] sm:text-[1rem] sm:text-lg h-[100%] md:w-[20%] transition ease-in-out delay-150 bg-gray border border-[#009d68] focus:outline-none hover:bg-[#009d68] hover:text-white focus:ring-4 hover:-translate-y-1 hover:scale-110 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 align-middle text-center"
       >
         Contact me!
-      </button>{" "}
+      </a>{" "}
     </section>
   );
 }
