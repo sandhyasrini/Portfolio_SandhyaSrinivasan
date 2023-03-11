@@ -10,7 +10,7 @@ function Experience() {
     <section id="experience" className=" text-white">
       <SectionHeading id="03." title="Experience" />
       <div className="flex flex-row justify-center mt-[3rem]">
-        <Accordion alwaysOpen={false} className="w-[80%]">
+        <Accordion alwaysOpen={false} className="w-[100%] sm:w-[80%]">
           {experience.map((data, index) => {
             return (
               <Accordion.Panel key={index}>
@@ -27,7 +27,7 @@ function Experience() {
                       viewBox="0 0 24 24"
                       stroke-width="1.5"
                       stroke="currentColor"
-                      className="w-4 h-6 inline"
+                      className="w-4 h-6 inline text-[#009d68]"
                     >
                       <path
                         stroke-linecap="round"
@@ -40,19 +40,19 @@ function Experience() {
                         d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
                       />
                     </svg>{" "}
-                    <span className="text-[#ed5444] font-semibold">
+                    <span className="text-[#009d68] font-semibold">
                     {data.location}
                     </span>
                   </span>
                   <p className="my-3 text-gray-500 dark:text-gray-400">
                     {data.summary}
                   </p>
-                  <p className="my-[2rem]">
+                  <p className="flex flex-col md:flex-row my-[2rem] text-center">
                     {data.stacks_used.map((skill, ind) => {
                       return (
                         <span
                           key={ind}
-                          className=" border-[#009d68] border-[1px] text-[#009d68] rounded-2xl bg-transparent m-[1rem] p-2 text-sm text-thin"
+                          className=" border-[1px] border-[#EF7C8E] rounded-2xl text-white font-semibold m-[1rem] p-2 text-sm text-thin"
                         >
                           {skill}
                         </span>

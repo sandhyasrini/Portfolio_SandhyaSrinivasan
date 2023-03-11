@@ -88,19 +88,19 @@ const experience = [
     title : 'Full Stack Developer, Wipro Digital   June 2021 - Present',
     location: 'Lloyds Banking Group, Remote',
     summary : 'Developed an all in one ecosystem (B2B) called Model Maker for the data analysts of the bank to develop and deploy algorithms for risk management and fraud migitation. Led a team of 5 engineers to develop and maintain the application.',
-    stacks_used : ['Javascript', 'React JS', 'Redux', 'Node.js', 'Kubernetes']
+    stacks_used : ['React JS', 'Redux', 'Node.js', 'Kubernetes', 'Docker', 'Linux Admin']
   },
   {
     title: 'Front end developer, Wipro Digital    June 2019 - May 2021',
     location: 'Lloyds Banking Group, London',
     summary: 'Worked with a tight-knit team of 5 and developed multiple front end web applications using React and Redux for Payments, Insurance and Claims journey. ',
-    stacks_used : ['Javascript', 'React JS', 'Redux', 'Cypress']
+    stacks_used : ['Javascript', 'React JS', 'Redux','Less', 'Cypress']
   },
   {
     title: 'Full developer, Wipro Digital    June 2016 - May 2019',
     location: 'Energy and Natural Utilities, Bengaluru',
     summary: 'Worked with a team of three and designed and developed multiple Web and Mobile applications (hybrid and Native) as POCs to validate application ideas and showcase the design to the customer',
-    stacks_used : ['Javascript', 'React JS', 'Node JS', 'Android', 'NLP Bots', 'Ionic']
+    stacks_used : ['Javascript', 'React JS', 'Node JS', 'Android', 'NLP Bots', 'Ionic', 'Microservice']
   }
 ]
 
