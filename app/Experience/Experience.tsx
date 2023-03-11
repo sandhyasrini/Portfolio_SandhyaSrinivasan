@@ -47,7 +47,7 @@ function Experience() {
                   <p className="my-3 text-gray-500 dark:text-gray-400">
                     {data.summary}
                   </p>
-                  <p className="flex flex-col md:flex-row my-[2rem] text-center">
+                  <p className="grid md:grid-flow-col grid-flow-row md:flex-row my-[2rem] text-center">
                     {data.stacks_used.map((skill, ind) => {
                       return (
                         <span
