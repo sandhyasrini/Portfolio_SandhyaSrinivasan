@@ -11,7 +11,7 @@ function Experience() {
     <section id="experience" className=" text-white mt-[-10rem] sm:mt-[-2rem]">
       <SectionHeading id="03." title="Experience" />
       <div className="flex flex-row justify-center mt-[3rem]">
-        <Accordion className="w-[100%] lg:w-[80%]">
+        <Accordion collapseAll={true} className="w-[100%] lg:w-[80%]">
           {experience.map((data, index) => {
             return (
               <Accordion.Panel key={index}>
