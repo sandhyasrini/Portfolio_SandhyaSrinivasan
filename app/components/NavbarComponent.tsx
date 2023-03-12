@@ -9,7 +9,7 @@ function NavbarComponent() {
   return (
 
 <div className="bg-[#1e1e1e] shadow-[#1b1b1c] shadow-lg">
-    <Navbar fluid={true} rounded={true} className="bg-[#1f1f1f] shadow-[#1b1b1c] shadow-lg">
+    <Navbar fluid={true} rounded={true} className="bg-[#1f1f1f] shadow-[#1b1b1c] shadow-lg fixed top-0 w-[100%]">
       <Navbar.Brand href="#">
         <span className="self-center whitespace-nowrap text-lg font-semibold text-white">
           Sandhya._
