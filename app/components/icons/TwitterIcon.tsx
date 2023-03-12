@@ -18,8 +18,8 @@ function TwitterIcon() {
         y2="52.195"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#1a6dff"></stop>
-        <stop offset="1" stop-color="#c822ff"></stop>
+        <stop offset="0" stopColor="#1a6dff"></stop>
+        <stop offset="1" stopColor="#c822ff"></stop>
       </linearGradient>
       <path
         fill="url(#iS8U25XJCb2VBQOwbuAcra_bYzsf9Bmocst_gr1)"
@@ -33,8 +33,8 @@ function TwitterIcon() {
         y2="52.195"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#1a6dff"></stop>
-        <stop offset="1" stop-color="#c822ff"></stop>
+        <stop offset="0" stopColor="#1a6dff"></stop>
+        <stop offset="1" stopColor="#c822ff"></stop>
       </linearGradient>
       <path
         fill="url(#iS8U25XJCb2VBQOwbuAcrb_bYzsf9Bmocst_gr2)"
@@ -49,8 +49,8 @@ function TwitterIcon() {
           y2="21.528"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#6dc7ff"></stop>
-          <stop offset="1" stop-color="#e6abff"></stop>
+          <stop offset="0" stopColor="#6dc7ff"></stop>
+          <stop offset="1" stopColor="#e6abff"></stop>
         </linearGradient>
         <circle cx="42" cy="20" r="2" fill="url(#undefined)"></circle>
       </g>

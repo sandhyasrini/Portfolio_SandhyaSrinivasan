@@ -18,8 +18,8 @@ function EmailIcon() {
         y2="9"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#c822ff"></stop>
-        <stop offset="1" stop-color="#1a6dff"></stop>
+        <stop offset="0" stopColor="#c822ff"></stop>
+        <stop offset="1" stopColor="#1a6dff"></stop>
       </linearGradient>
       <path
         fill="url(#AWKzNDila4ISNLgYjkvBOa_ihMzI7k32pJf_gr1)"
@@ -33,8 +33,8 @@ function EmailIcon() {
         y2="23"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#e6abff"></stop>
-        <stop offset="1" stop-color="#6dc7ff"></stop>
+        <stop offset="0" stopColor="#e6abff"></stop>
+        <stop offset="1" stopColor="#6dc7ff"></stop>
       </linearGradient>
       <path
         fill="url(#AWKzNDila4ISNLgYjkvBOb_ihMzI7k32pJf_gr2)"

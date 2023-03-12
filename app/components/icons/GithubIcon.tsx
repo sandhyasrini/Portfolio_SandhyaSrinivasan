@@ -19,8 +19,8 @@ function GithubIcon() {
         gradientUnits="userSpaceOnUse"
         spreadMethod="reflect"
       >
-        <stop offset="0" stop-color="#6dc7ff"></stop>
-        <stop offset="1" stop-color="#e6abff"></stop>
+        <stop offset="0" stopColor="#6dc7ff"></stop>
+        <stop offset="1" stopColor="#e6abff"></stop>
       </linearGradient>
       <path
         fill="url(#KpzH_ttTMIjq8dhx1zD2pa_52539_gr1)"
@@ -35,8 +35,8 @@ function GithubIcon() {
         gradientUnits="userSpaceOnUse"
         spreadMethod="reflect"
       >
-        <stop offset="0" stop-color="#1a6dff"></stop>
-        <stop offset="1" stop-color="#c822ff"></stop>
+        <stop offset="0" stopColor="#1a6dff"></stop>
+        <stop offset="1" stopColor="#c822ff"></stop>
       </linearGradient>
       <path
         fill="url(#KpzH_ttTMIjq8dhx1zD2pb_52539_gr2)"

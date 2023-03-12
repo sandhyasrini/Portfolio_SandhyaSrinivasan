@@ -8,10 +8,10 @@ import LocationIcon from "../components/icons/LocationIcon";
 
 function Experience() {
   return (
-    <section id="experience" className=" text-white">
+    <section id="experience" className=" text-white mt-[-10rem] sm:mt-[-2rem]">
       <SectionHeading id="03." title="Experience" />
       <div className="flex flex-row justify-center mt-[3rem]">
-        <Accordion alwaysOpen={false} className="w-[100%] sm:w-[80%]">
+        <Accordion className="w-[100%] lg:w-[80%]">
           {experience.map((data, index) => {
             return (
               <Accordion.Panel key={index}>
@@ -30,7 +30,7 @@ function Experience() {
                   <p className="my-3 text-gray-500 dark:text-gray-400">
                     {data.summary}
                   </p>
-                  <p className="grid md:grid-flow-col grid-flow-row md:flex-row my-[2rem] text-center">
+                  <p className="grid sm:grid-flow-col grid-flow-row my-[2rem] text-center justify-center">
                     {data.stacks_used.map((skill, ind) => {
                       return (
                         <span
