@@ -4,10 +4,10 @@ import { description } from "@/utils/config";
 
 export default function Landing() {
   return (
-    <section className="h-[100%] flex flex-col m-[2rem] my-[6rem]">
+    <section className="h-[100%] flex flex-col mx-0 sm:m-[2rem] my-[6rem]">
       <div
         id="Home"
-        className={`landing font-bold text-4xl sm:text-6xl text-white`}
+        className={`landing font-bold text-3xl sm:text-6xl text-white`}
       >
         <h1>Hi,</h1>
         <h1>
