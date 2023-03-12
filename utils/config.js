@@ -35,8 +35,7 @@ const about_me = [
   },
   {
     key: "text",
-    text: `I have worked in both Front end and back end development,
-  designing and developing both web and mobile applications. I am a `,
+    text: `I'm always up for a new challenge and ready to learn new skills and technologies in this fast paced world of software development. I am a `,
   link_text: 'Certified Kubernetes Application developer',
   link_url: 'https://www.credly.com/badges/818c1f5f-17ad-45dd-8a78-73fddc273b3f',
   target: '_blank',
