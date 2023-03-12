@@ -6,7 +6,7 @@ function ProgressBarComponent() {
     <div className="px-0 sm:px-5 mt-[4rem] sm:mt-0">
     {skills.map((element, index) => {
       return (
-        <article key={index} className="py-4">
+        <article key={index} className="py-4 font-calibre">
           <p>{element.name}</p>
           <div className="h-2 w-full bg-gray-600 rounded overflow-hidden">
             <div

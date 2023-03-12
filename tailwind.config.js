@@ -17,6 +17,7 @@ module.exports = {
       poppins: ["Poppins", "sans-serif"],
       belle: ["La Belle Aurore", "cursive"],
       shantell: ["Shantell Sans", "cursive"],
+      calibre: ['Calibre', 'sans-serif']
     },
   },
   plugins: [require("flowbite/plugin")],

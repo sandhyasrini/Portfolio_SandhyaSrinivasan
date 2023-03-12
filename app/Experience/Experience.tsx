@@ -16,7 +16,7 @@ function Experience() {
             return (
               <Accordion.Panel key={index}>
                 <Accordion.Title className="w-[100%]">
-                  <span className="flex flex-row w-[100%] justify-between">
+                  <span className="flex flex-row w-[100%] justify-between font-calibre">
                     <span >{data.title}</span>
                   </span>
                 </Accordion.Title>
