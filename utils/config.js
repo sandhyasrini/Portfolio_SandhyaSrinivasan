@@ -39,7 +39,7 @@ const about_me = [
   link_text: 'Certified Kubernetes Application developer',
   link_url: 'https://www.credly.com/badges/818c1f5f-17ad-45dd-8a78-73fddc273b3f',
   target: '_blank',
-  connector: ` and a `,
+  connector: ` and an `,
   second_text: ' AWS Certified Developer Associate',
   second_url: 'https://www.credly.com/badges/2ede14c3-7d8b-4172-9cfb-377e53a2d249/public_url'
   },
