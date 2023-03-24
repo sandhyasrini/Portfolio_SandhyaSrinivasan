@@ -46,6 +46,10 @@ html {
     margin-top: 1rem;
     left: 4rem
 }
+.content::after{
+  content: "\a";
+  white-space: pre;
+}
 
 /* .landing span {
     text-shadow: 0 2px  #009d68;
@@ -117,3 +121,4 @@ body {
   position: absolute;
   left: 4.5rem
 }
+

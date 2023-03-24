@@ -1,28 +1,53 @@
 import React from "react";
 import "../globals.css";
-import { description } from "@/utils/config";
+import { description, intro } from "@/utils/config";
 
 export default function Landing() {
+  const chars = [...intro];
+
   return (
     <section className="h-[100%] flex flex-col mx-0 sm:mx-[3rem] my-[6rem]">
       <div
         id="Home"
         className={`landing font-bold text-3xl sm:text-6xl text-white font-calibre`}
       >
-        <h1>Hi,</h1>
         <h1>
-          I&#39;m{" "}
-          <span className="text-[#ed5444] font-bold">S</span>
-          andhya,
+          {chars.map((char, index) => {
+            if (char === "*") {
+              return;
+            } else if (char === " ") {
+              return <span key={index}> </span>;
+            }
+
+            return chars[index - 1] === "*" ? (
+              <span
+                className={`text-[#fd2155] ease-linear duration-1500 font-bold inline-block hover:animate-rubber-band`}
+                key={index}
+              >
+                {char}
+              </span>
+            ) : (
+              <span
+                className={`ease-linear duration-1500 hover:animate-rubber-band hover:text-[#009d68]  ${
+                  char !== "#" && "inline-block"
+                }`}
+                key={index}
+              >
+                {char === "#" ? <br className="ease-linear delay-1000" /> : char}
+              </span>
+            );
+          })}
         </h1>
-        <h1>a Full Stack developer</h1>
       </div>
+      <div>
       <p
-        className={`font-thin text-lg text-white my-[4rem] mx-0 description text-justify`}
+        className={`font-thin overflow-hidden w-[100%] text-lg text-white my-[4rem] mx-0 description text-justify`}
       >
         {description}
       </p>
-      <a href="/#contact"
+      </div>
+      <a
+        href="/#contact"
         className="text-[#009d68] w-[50%] text-[0.5rem] sm:w-[40%] sm:text-[1rem] sm:text-lg h-[100%] md:w-[20%] transition ease-in-out delay-150 bg-gray border border-[#009d68] focus:outline-none hover:bg-[#009d68] hover:text-white focus:ring-4 hover:-translate-y-1 hover:scale-110 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 align-middle text-center font-calibre"
       >
         Contact me!

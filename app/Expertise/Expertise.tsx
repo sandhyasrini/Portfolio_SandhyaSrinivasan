@@ -5,6 +5,7 @@ import ProgressBarComponent from "../components/ProgressBarComponent";
 import { SectionHeading } from "../components/SectionHeading";
 
 function Expertise() {
+
   return (
     <section id="expertise" className="mt-[10rem] sm:my-[10rem] text-white">
       <SectionHeading id="02." title="Expertise" />
