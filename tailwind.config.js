@@ -63,37 +63,24 @@ module.exports = {
             width: "100%",
           },
         },
-        before: {
+         "shine": {
           "0%": {
-            "margin-left": "100%",
-            "width": "300%",
-            "opacity" : "0",
-            "visibility":"hidden",
-            "overflow":"hidden"
+            "background-position": "0",
           },
-
-          "30%": {
-            "margin-left": "60%",
-            "width": "100%",
+          "60%":{
+            "background-position": "600px",
           },
-          "70%": {
-            "margin-left": "30%",
-            "width": "100%",
-            "visibility":"visible",
-            "opacity": "1"
-          },
-          "90%": {
-            "margin-left": "0%",
-            width: "100%",
-          },
-        },
+          "100%": {
+            "background-position": "600px",
+          }
+        }
       },
       animation: {
-        "waving-hand": "wave 4s linear 1 3s",
+        "waving-hand": "wave 1s linear 1",
         "rubber-band": "rubberband 0.8s linear 1 ",
+        "shine": "shine 0.8s linear 1 ",
         "slide-in": "slidein 3s linear 1",
-        "initial-delay": "before 7s linear 1",
-        "ping-once": "ping 3s linear 1 3s"
+        "ping-once": "ping 1s linear 1"
       },
     },
     fontFamily: {

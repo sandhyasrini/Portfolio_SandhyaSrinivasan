@@ -31,7 +31,7 @@ function NavbarComponent() {
       <Navbar.Collapse className="md:hover:text-[#009d68]">
         {navLinks.map((navItem, index) => {
           return (
-            <Navbar.Link key = {index} href={navItem.url} className="text-white inline-block hover:text-[#009d68] md:hover:text-[#009d69] animate-slide-in">
+            <Navbar.Link key = {index} href={navItem.url} className=" w-[100%] text-white inline-block hover:text-[#009d68] md:hover:text-[#009d69] animate-slide-in">
               <span className="text-[#009d68]"> {'0'}{index + 1}. </span>
               {navItem.name}
             </Navbar.Link>

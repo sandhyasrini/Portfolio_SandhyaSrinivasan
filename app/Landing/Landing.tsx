@@ -1,8 +1,14 @@
-import React from "react";
+'use client'
+import React, { useEffect, useState } from "react";
 import "../globals.css";
 import { description, intro } from "@/utils/config";
 
 export default function Landing() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+useEffect(() => {
+    setIsLoaded(true);
+}, []);
   const chars = [...intro];
 
   return (
@@ -21,14 +27,14 @@ export default function Landing() {
 
             return chars[index - 1] === "*" ? (
               <span
-                className={`text-[#fd2155] ease-linear duration-1500 font-bold inline-block hover:animate-rubber-band`}
+                className={`text-[#fd2155] font-bold inline-block hover:animate-rubber-band ${!isLoaded && 'animate-ping-once'}  delay-[index+1]`}
                 key={index}
               >
                 {char}
               </span>
             ) : (
               <span
-                className={`ease-linear duration-1500 hover:animate-rubber-band hover:text-[#009d68]  ${
+                className={`hover:animate-rubber-band hover:text-[#009d68] ${!isLoaded && 'animate-ping-once'} ${
                   char !== "#" && "inline-block"
                 }`}
                 key={index}
