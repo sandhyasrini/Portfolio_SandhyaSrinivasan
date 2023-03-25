@@ -8,7 +8,7 @@ interface Props {
 }
 function NavbarComponent({ showNav }: Props) {
   return (
-    <div className={`bg-[#1e1e1e] shadow-[#1b1b1c] shadow-lg ${showNav ? 'visible transition-all ease-in delay-500 animate-[pulse_0.5s_ease-in_1]' : 'invisible ease-in-out transition-all animate-[pulse_0.5s_ease-in_1]'}`}>
+    <div className={`bg-[#1e1e1e] shadow-[#1b1b1c] shadow-lg visible ${showNav ? 'md:visible md:transition-all md:ease-in  md:animate-[pulse_2s_ease-in_1]' : 'md:invisible md:ease-out md:transition-all md:animate-[pulse_2s_ease-out_1]'}`}>
       <Navbar
         fluid={true}
         rounded={true}
@@ -37,7 +37,7 @@ function NavbarComponent({ showNav }: Props) {
               <Navbar.Link
                 key={index}
                 href={navItem.url}
-                className=" w-[100%] text-white inline-block hover:text-[#009d68] md:hover:text-[#009d69] animate-slide-in"
+                className=" w-[100%] text-white inline-block hover:text-[#009d68] md:hover:text-[#009d69] animate-[slideinMobile_1s_ease-in_1] md:animate-slide-in"
               >
                 <span className="text-[#009d68]">
                   {" "}

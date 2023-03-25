@@ -65,6 +65,16 @@ module.exports = {
             width: "100%",
           },
         },
+        slideinMobile: {
+          "0%": {
+            "margin-left": "100%",
+            width: "300%",
+          },
+          "90%": {
+            "margin-left": "0%",
+            width: "100%",
+          },
+        },
         progressSlide: {
           "0%": {
             width: "0%",
