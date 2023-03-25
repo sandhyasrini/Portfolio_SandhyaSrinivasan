@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
+  mode: 'jit',
   content: [
     "./node_modules/flowbite-react/**/*.js",
     "./node_modules/flowbite/**/*.js",
@@ -14,16 +15,6 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        wave: {
-          "0%": { opacity: "0", transform: "rotate(0.0deg)" },
-          "10%": { opacity: "1", transform: "rotate(14deg)" },
-          "20%": { transform: "rotate(-8deg)" },
-          "30%": { transform: "rotate(14deg)" },
-          "40%": { transform: "rotate(-4deg)" },
-          "50%": { transform: "rotate(10.0deg)" },
-          "60%": { transform: "rotate(0.0deg)" },
-          "100%": { transform: "rotate(0.0deg)" },
-        },
         rubberband: {
           "0%": {
             transform: "scaleX(1.32) scaleY(0.95)",
@@ -63,24 +54,60 @@ module.exports = {
             width: "100%",
           },
         },
-         "shine": {
+        progressSlide: {
           "0%": {
-            "background-position": "0",
-          },
-          "60%":{
-            "background-position": "600px",
+            width: "0%",
           },
           "100%": {
-            "background-position": "600px",
-          }
-        }
+            width: "100%",
+          },
+        },
+        slideup: {
+          "0%": {
+            transform: "translateY(100%)",
+            opacity: "0",
+            visibility: "hidden"
+
+          },
+          "50%": {
+            transform: "translateY(50%)",
+            opacity: "0",
+            visibility: "visible"
+
+          },
+          "100%": {
+            transform: "translateY(0%)",
+            opacity: "1",
+            visibility: "visible"
+          },
+        },
+        fadeinright: {
+          "0%": {
+            transform: "translateX(-10%)",
+            opacity: "0",
+            visibility: "hidden"
+
+          },
+          "50%": {
+            transform: "translateX(-5%)",
+            opacity: "0",
+            visibility: "visible"
+
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: "1",
+            visibility: "visible"
+          },
+        },
       },
       animation: {
         "waving-hand": "wave 1s linear 1",
         "rubber-band": "rubberband 0.8s linear 1 ",
-        "shine": "shine 0.8s linear 1 ",
+        "progress-slide": "progressSlide 2s cubic-bezier(0.4, 0, 1, 1) 1 ",
         "slide-in": "slidein 3s linear 1",
-        "ping-once": "ping 1s linear 1"
+        "slide-up": "slideup 1.5s linear 1",
+        "ping-once": "ping 1s linear 1",
       },
     },
     fontFamily: {

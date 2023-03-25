@@ -1,16 +1,24 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import "../globals.css";
 import { about_me } from "@/utils/config";
 import ProgressBarComponent from "../components/ProgressBarComponent";
 import { SectionHeading } from "../components/SectionHeading";
+import { useIsInViewport } from "../components/UseIsInViewPort";
 
 function Expertise() {
+  const ref = useRef(null);
 
+  const isInViewport = useIsInViewport(ref);
   return (
-    <section id="expertise" className="mt-[10rem] sm:my-[10rem] text-white">
-      <SectionHeading id="02." title="Expertise" />
-      <div className="grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 mt-[4rem] sm:my-[4rem] leading-8 text-justify">
-        <div className="about_me px-0 sm:px-5">
+    <section
+      id="expertise"
+      className="mt-[10rem] sm:my-[10rem] text-white"
+      ref={ref}
+    >
+      <SectionHeading id="02." title="Expertise" isInView={isInViewport} />
+      <div className={`grid md:grid-cols-2 grid-rows-2 md:grid-rows-1 mt-[4rem] sm:my-[4rem] leading-8 text-justify }`}>
+        <div className={`about_me px-0 sm:px-5 ${isInViewport && 'animate-[slideup_3s_ease-in-out_1]'}`}>
           {about_me.map((data, index) => {
             return (
               <p key={index} className="my-[1rem] font-thin text-md">

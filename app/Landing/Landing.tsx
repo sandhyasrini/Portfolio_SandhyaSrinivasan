@@ -4,11 +4,7 @@ import "../globals.css";
 import { description, intro } from "@/utils/config";
 
 export default function Landing() {
-  const [isLoaded, setIsLoaded] = useState(false);
 
-useEffect(() => {
-    setIsLoaded(true);
-}, []);
   const chars = [...intro];
 
   return (
@@ -17,7 +13,7 @@ useEffect(() => {
         id="Home"
         className={`landing font-bold text-3xl sm:text-6xl text-white font-calibre`}
       >
-        <h1>
+        <h1 className="animate-slide-up">
           {chars.map((char, index) => {
             if (char === "*") {
               return;
@@ -27,14 +23,14 @@ useEffect(() => {
 
             return chars[index - 1] === "*" ? (
               <span
-                className={`text-[#fd2155] font-bold inline-block hover:animate-rubber-band ${!isLoaded && 'animate-ping-once'}  delay-[index+1]`}
+                className={`text-[#fd2155] font-bold inline-block hover:animate-rubber-band `}
                 key={index}
               >
                 {char}
               </span>
             ) : (
               <span
-                className={`hover:animate-rubber-band hover:text-[#009d68] ${!isLoaded && 'animate-ping-once'} ${
+                className={`hover:animate-rubber-band hover:text-[#009d68] ${
                   char !== "#" && "inline-block"
                 }`}
                 key={index}
@@ -47,7 +43,7 @@ useEffect(() => {
       </div>
       <div>
       <p
-        className={`font-thin overflow-hidden w-[100%] text-lg text-white my-[4rem] mx-0 description text-justify`}
+        className={`font-thin delay-1000 transition-all overflow-hidden w-[100%] text-lg text-white my-[4rem] mx-0 description text-justify animate-[slideup_3s_ease-in-out_1]`}
       >
         {description}
       </p>
