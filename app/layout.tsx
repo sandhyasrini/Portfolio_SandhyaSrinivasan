@@ -16,7 +16,6 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body>
         <SideBarLeft />
-        <NavbarComponent />
         {children}
           <SideBarRight />
       </body>

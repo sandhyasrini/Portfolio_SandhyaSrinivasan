@@ -1,19 +1,36 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
+import NavbarComponent from "../components/NavbarComponent";
+import SideBarRight from "../components/SideBarRight";
 import Contact from "../Contact/Contact";
 import Experience from "../Experience/Experience";
 import Expertise from "../Expertise/Expertise";
 import Landing from "../Landing/Landing";
+import styles from '../page.module.css'
 
 function Main() {
-   function handleScroll() {
+  const [showNav, setShowNav] = useState<boolean>(true);
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
 
-   }
+  const handleScroll = () => {
+    scrollPosition < window.scrollY
+      ? (setScrollPosition(window.scrollY), setShowNav(false))
+      : (setScrollPosition(window.scrollY), setShowNav(true));
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
   return (
     <div>
-      <Landing />
+      <NavbarComponent showNav={showNav}/>
+      <div className={styles.main}>
+      <Landing  />
       <Expertise />
       <Experience />
       <Contact />
+      </div>
     </div>
   );
 }

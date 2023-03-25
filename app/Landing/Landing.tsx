@@ -1,10 +1,10 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import "../globals.css";
 import { description, intro } from "@/utils/config";
 
-export default function Landing() {
 
+export default function Landing() {
   const chars = [...intro];
 
   return (
@@ -35,18 +35,22 @@ export default function Landing() {
                 }`}
                 key={index}
               >
-                {char === "#" ? <br className="ease-linear delay-1000" /> : char}
+                {char === "#" ? (
+                  <br className="ease-linear delay-1000" />
+                ) : (
+                  char
+                )}
               </span>
             );
           })}
         </h1>
       </div>
       <div>
-      <p
-        className={`font-thin delay-1000 transition-all overflow-hidden w-[100%] text-lg text-white my-[4rem] mx-0 description text-justify animate-[slideup_3s_ease-in-out_1]`}
-      >
-        {description}
-      </p>
+        <p
+          className={`font-thin delay-1000 transition-all overflow-hidden w-[100%] text-lg text-white my-[4rem] mx-0 description text-justify animate-[slideup_3s_ease-in-out_1]`}
+        >
+          {description}
+        </p>
       </div>
       <a
         href="/#contact"

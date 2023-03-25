@@ -122,6 +122,21 @@ module.exports = {
             visibility: "visible",
           },
         },
+        fadeout: {
+          "0%": {
+            opacity: "1",
+            visibility: "visible",
+          },
+          "50%": {
+            opacity: "0.5",
+            visibility: "visible",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: "0",
+            visibility: "hidden",
+          },
+        },
       },
       animation: {
         "waving-hand": "wave 1s linear 1",
