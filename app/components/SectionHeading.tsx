@@ -4,7 +4,7 @@ import { SectionName } from "../types";
 interface Props {
   id: string;
   title: string;
-  isInView: boolean;
+  isInView?: boolean;
 }
 
 export const SectionHeading = ({ id, title, isInView }: Props) => {
