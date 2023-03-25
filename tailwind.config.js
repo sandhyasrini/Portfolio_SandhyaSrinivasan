@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
-  mode: 'jit',
+  mode: "jit",
   content: [
     "./node_modules/flowbite-react/**/*.js",
     "./node_modules/flowbite/**/*.js",
@@ -35,6 +35,17 @@ module.exports = {
             transform: "scaleX(1) scaleY(1)",
           },
         },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-15deg)" },
+          "50%": { transform: "rotate(15deg)" },
+        },
+        heartBeat: {
+          "0%": { transform: "scale(1);" },
+          "14%": { transform: "scale(1.3);" },
+          "28%": { transform: "scale(1);" },
+          "42%": { transform: "scale(1.3);" },
+          "70%": { transform: "scale(1);" },
+        },
         slidein: {
           "0%": {
             "margin-left": "100%",
@@ -64,40 +75,51 @@ module.exports = {
         },
         slideup: {
           "0%": {
-            transform: "translateY(100%)",
+            transform: "translateY(80%)",
             opacity: "0",
-            visibility: "hidden"
-
+            visibility: "hidden",
           },
           "50%": {
             transform: "translateY(50%)",
             opacity: "0",
-            visibility: "visible"
-
+            visibility: "visible",
           },
           "100%": {
             transform: "translateY(0%)",
             opacity: "1",
-            visibility: "visible"
+            visibility: "visible",
           },
         },
         fadeinright: {
           "0%": {
-            transform: "translateX(-10%)",
-            opacity: "0",
-            visibility: "hidden"
-
-          },
-          "50%": {
             transform: "translateX(-5%)",
             opacity: "0",
-            visibility: "visible"
-
+            visibility: "hidden",
+          },
+          "50%": {
+            transform: "translateX(-2%)",
+            opacity: "0",
+            visibility: "visible",
           },
           "100%": {
             transform: "translateX(0%)",
             opacity: "1",
-            visibility: "visible"
+            visibility: "visible",
+          },
+        },
+        fadein: {
+          "0%": {
+            opacity: "0",
+            visibility: "hidden",
+          },
+          "50%": {
+            opacity: "0.5",
+            visibility: "visible",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+            opacity: "1",
+            visibility: "visible",
           },
         },
       },

@@ -1,17 +1,22 @@
-import React from "react";
+'use client'
+import React, {useRef} from "react";
 import { SectionHeading } from "../components/SectionHeading";
 import { contact_me } from "@/utils/config";
 import TwitterIcon from "../components/icons/TwitterIcon";
 import GithubIcon from "../components/icons/GithubIcon";
 import LinkedinIcon from "../components/icons/LinkedinIcon";
 import EmailIcon from "../components/icons/EmailIcon";
+import { useIsInViewport } from "../components/UseIsInViewPort";
 
 function Contact() {
+  const ref = useRef(null);
+
+  const isInViewport = useIsInViewport(ref);
   return (
-    <section id="contact" className="mt-[8rem] lg:mt-[12rem]">
+    <section id="contact" ref={ref} className="mt-[8rem] lg:mt-[12rem]">
       {" "}
-      <SectionHeading id="04." title="Contact" />
-      <p className="font-thin text-white text-lg sm:m-[4rem] text-justify">
+      <SectionHeading id="04." title="Contact" isInView={isInViewport}/>
+      <p className={`font-thin text-white text-lg sm:m-[4rem] text-justify ${isInViewport && 'animate-[slideup_3s_ease-in-out_1]'}`}>
         {contact_me}
         </p>
         <div className="font-semibold sm:m-[2rem] text-[#009d68]">

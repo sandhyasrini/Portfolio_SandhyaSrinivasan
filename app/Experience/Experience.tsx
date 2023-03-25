@@ -1,23 +1,27 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { SectionHeading } from "../components/SectionHeading";
 import { Accordion } from "flowbite-react";
 import { experience } from "@/utils/config";
 import LocationIcon from "../components/icons/LocationIcon";
+import { useIsInViewport } from "../components/UseIsInViewPort";
 
 function Experience() {
+  const ref = useRef(null);
+
+  const isInViewport = useIsInViewport(ref);
   return (
-    <section id="experience" className=" text-white mt-[-10rem] sm:mt-[-2rem]">
-      <SectionHeading id="03." title="Experience" />
+    <section id="experience" ref={ref} className=" text-white mt-[-10rem] sm:mt-[-2rem]">
+      <SectionHeading id="03." title="Experience" isInView={isInViewport}/>
       <div className="flex flex-row justify-center mt-[3rem]">
-        <Accordion collapseAll={false} className="w-[100%] lg:w-[80%]">
+        <Accordion collapseAll={false} className={`w-[100%] lg:w-[80%] ${isInViewport && 'animate-[fadein_3s_ease-in_1]'}`}>
           {experience.map((data, index) => {
             return (
               <Accordion.Panel key={index}>
                 <Accordion.Title className="w-[100%]">
                   <span className="flex flex-row w-[100%] justify-between font-calibre">
-                    <span >{data.title}</span>
+                    <span>{data.title}</span>
                   </span>
                 </Accordion.Title>
                 <Accordion.Content>
