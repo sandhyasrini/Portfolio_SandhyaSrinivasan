@@ -14,6 +14,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        width: "width",
+      },
       keyframes: {
         rubberband: {
           "0%": {

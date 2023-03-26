@@ -8,7 +8,7 @@ interface Props {
 }
 function NavbarComponent({ showNav }: Props) {
   return (
-    <div className={`bg-[#1e1e1e] shadow-[#1b1b1c] shadow-lg visible ${showNav ? 'md:visible md:transition-all md:ease-in  md:animate-[pulse_2s_ease-in_1]' : 'md:invisible md:ease-out md:transition-all md:animate-[pulse_2s_ease-out_1]'}`}>
+    <div className={`bg-[#1e1e1e] shadow-[#1b1b1c] shadow-lg visible ${showNav ? 'md:visible md:transition-[visibility] md:ease-in  delay-200 animate-slide-up' : 'md:invisible md:ease-out md:transition-width transition-width delay-[250ms] animate-slide-up'}`}>
       <Navbar
         fluid={true}
         rounded={true}

@@ -90,7 +90,7 @@ const skills = [
 
 const experience = [
   {
-    title : 'Full Stack Developer, Wipro Digital   June 2021 - Present',
+    title : 'Full Stack Developer, Wipro Digital   June 2021 - March 2023',
     location: 'Lloyds Banking Group, Remote',
     summary : 'Developed an all in one ecosystem (B2B) called Model Maker for the data analysts of the bank to develop and deploy algorithms for risk management and fraud migitation. Led a team of 5 engineers to develop and maintain the application.',
     stacks_used : ['React JS', 'Redux', 'Node.js', 'Kubernetes', 'Docker', 'Linux Admin']
