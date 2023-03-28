@@ -20,19 +20,22 @@ module.exports = {
       keyframes: {
         rubberband: {
           "0%": {
-            transform: "scaleX(1.32) scaleY(0.95)",
+            transform: "scaleX(0.9) scaleY(1)",
           },
           "40%": {
-            transform: "scaleX(0.5) scaleY(0.95)",
+            transform: "scaleX(1.30) scaleY(0.65)",
           },
           "55%": {
-            transform: "scaleX(1.40) scaleY(0.85)",
+            transform: "scaleX(0.85) scaleY(1)",
           },
           "65%": {
-            transform: "scaleX(0.8) scaleY(0.9)",
+            transform: "scaleX(1.09) scaleY(0.55)",
           },
           "75%": {
-            transform: "scaleX(1.1)  scaleY(1)",
+            transform: "scaleX(0.7)  scaleY(1)",
+          },
+          "90%": {
+            transform: "scaleX(1.05)  scaleY(0.95)",
           },
           "100%": {
             transform: "scaleX(1) scaleY(1)",
@@ -153,7 +156,7 @@ module.exports = {
       },
       animation: {
         "waving-hand": "wave 1s linear 1",
-        "rubber-band": "rubberband 0.8s linear 1 ",
+        "rubber-band": "rubberband 1s linear 1 ",
         "progress-slide": "progressSlide 2s cubic-bezier(0.4, 0, 1, 1) 1 ",
         "slide-in": "slidein 3s linear 1",
         "slide-up": "slideup 1.5s linear 1",
