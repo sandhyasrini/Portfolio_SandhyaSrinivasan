@@ -12,7 +12,7 @@ function Experience() {
 
   const isInViewport = useIsInViewport(ref);
   return (
-    <section id="experience" ref={ref} className=" text-white mt-[8rem] sm:mt-[2rem]">
+    <section id="experience" ref={ref} className=" text-white mt-[-8rem] sm:mt-[2rem]">
       <SectionHeading id="03." title="Experience" isInView={isInViewport}/>
       <div className="flex flex-row justify-center mt-[3rem]">
         <Accordion collapseAll={false} className={`w-[100%] lg:w-[80%] ${isInViewport && 'animate-[fadein_3s_ease-in_1]'}`}>
