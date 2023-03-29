@@ -50,10 +50,8 @@ const about_me = [
   },
   {
     key: 'link',
-    text: `I'm open to Job opportunities where I can contribute, learn and
-  grow. If you have a good opportunity that matches my skills and
-  experience then don't hesitate to `,
-    link_text: 'contact me.',
+    text: `I would welcome the chance to explore potential roles and discuss how I could contribute to your organization. If you come across any suitable opportunities that align with my skills and experience, feel free to `,
+    link_text: 'reach out to me.',
     link_url: '/#contact',
   },
 ];
