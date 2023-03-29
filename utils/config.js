@@ -32,12 +32,12 @@ develop highly scalable and quality assured cloud-native applications.`;
 const about_me = [
   {
     key: "text",
-    text: `I enjoy building dynamic, creative products from start to finish. I
-  focus on developing intuitive experiences that constantly grow and
-  improve based on metrics. Over the years I've worked at Wipro
-  Digital, I have had the chance to work across multiple stacks and
-  technologies. I've gained knwoledge in both front end and
-  backend javascript frameworks like ReactJS, NodeJS, NextJS`,
+    text: `I enjoy building dynamic, creative products from scratch. I
+    focus on developing intuitive experiences that constantly grow and
+    improve based on metrics. Over the years, I've worked at Wipro
+    Digital, I have had the chance to work across multiple stacks and
+    technologies. I've gained knowledge in both front-end and
+    backend javascript frameworks like ReactJS, NodeJS, NextJS`,
   },
   {
     key: "text",
