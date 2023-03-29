@@ -168,6 +168,8 @@ module.exports = {
       belle: ["La Belle Aurore", "cursive"],
       shantell: ["Shantell Sans", "cursive"],
       calibre: ["Calibre", "sans-serif"],
+      mono: ['Roboto Mono', 'monospace'],
+
     },
   },
   plugins: [require("flowbite/plugin")],

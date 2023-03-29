@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Blogs from "../Blogs/Blogs";
 import NavbarComponent from "../components/NavbarComponent";
 import SideBarRight from "../components/SideBarRight";
 import Contact from "../Contact/Contact";
@@ -29,6 +30,7 @@ function Main() {
       <Landing  />
       <Expertise />
       <Experience />
+      <Blogs />
       <Contact />
       </div>
     </div>

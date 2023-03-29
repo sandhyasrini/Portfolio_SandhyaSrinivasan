@@ -16,6 +16,10 @@ const navLinks = [
     url: "/#experience",
   },
   {
+    name: "Blogs",
+    url: "/#blogs",
+  },
+  {
     name: "Contact",
     url: "/#contact",
   },

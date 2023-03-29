@@ -13,7 +13,7 @@ function Contact() {
 
   const isInViewport = useIsInViewport(ref);
   return (
-    <section id="contact" ref={ref} className="mt-[8rem] lg:mt-[12rem]">
+    <section id="contact" ref={ref} className="mt-[7rem] lg:mt-[12rem]">
       {" "}
       <SectionHeading id="04." title="Contact" isInView={isInViewport}/>
       <p className={`font-thin text-white text-lg sm:m-[4rem] text-justify ${isInViewport && 'animate-[slideup_3s_ease-in-out_1]'}`}>
