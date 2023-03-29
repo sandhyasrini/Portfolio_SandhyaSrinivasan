@@ -5,14 +5,14 @@ import { useIsInViewport } from '../components/UseIsInViewPort';
 import { getMediumStories } from '../api/RestClient';
 import ExternalLink from '../components/icons/ExternalLink';
 import MediumIcon from '../components/icons/MediumIcon';
+import { storiesObject } from '../types';
 
 function Blogs() {
-  const [stories, setStories] = useState([]);
+  const [stories, setStories] = useState<storiesObject[] | []>([]);
   const [error, setError] = useState(false);
   useEffect(() => {
     getMediumStories()
       .then((data) => {
-        console.log(data);
         setStories(data.items);
         setError(false);
       })
@@ -36,7 +36,7 @@ function Blogs() {
                 onClick={() => {
                     window.open(item.link);
                   }}
-                className='rounded border-white border-[1px] m-4 p-7 hover:scale-105 cursor-pointer h-[25rem]'
+                className={`rounded border-white border-[1px] m-4 p-7 hover:scale-105 cursor-pointer h-[25rem] ${isInViewport && 'animate-[slideup_1s_ease-in-out_1]'}`}
               >
                 <div className='text-white w-[100%] grid grid-cols-2 justify-between'>
                 <MediumIcon />
