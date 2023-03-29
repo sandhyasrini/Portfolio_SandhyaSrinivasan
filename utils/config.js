@@ -106,7 +106,7 @@ const experience = [
     stacks_used : ['Javascript', 'React JS', 'Redux','Less', 'Cypress']
   },
   {
-    title: 'Full developer, Wipro Digital    June 2016 - May 2019',
+    title: 'Full Stack developer, Wipro Digital    June 2016 - May 2019',
     location: 'Energy and Natural Utilities, Bengaluru',
     summary: 'Worked with a team of three and designed and developed multiple Web and Mobile applications (hybrid and Native) as POCs to validate application ideas and showcase the design to the customer',
     stacks_used : ['Javascript', 'React JS', 'Node JS', 'Android', 'NLP Bots', 'Ionic', 'Microservice']
