@@ -28,7 +28,7 @@ function Blogs() {
     <section id='blogs' className='mt-[10rem] text-white' ref={ref}>
       <SectionHeading id='04.' title='Blogs' isInView={isInViewport} />
       {!error && (
-        <div className='grid gap-3 lg:grid-cols-3 my-[1.8rem] py-[3.5rem]'>
+        <div className='lg:grid lg:gap-3 lg:grid-cols-3 my-[1.8rem] py-[3.5rem]'>
           {stories.map((item, index) => {
             return (
               <div
@@ -36,7 +36,7 @@ function Blogs() {
                 onClick={() => {
                     window.open(item.link);
                   }}
-                className={`rounded border-white border-[1px] m-4 p-7 hover:scale-105 cursor-pointer h-[25rem] ${isInViewport && 'animate-[slideup_1s_ease-in-out_1]'}`}
+                className={`rounded border-white border-[1px] m-4 p-7 hover:scale-105 cursor-pointer lg:h-[25rem] ${isInViewport && 'animate-[slideup_1s_ease-in-out_1]'}`}
               >
                 <div className='text-white w-[100%] grid grid-cols-2 justify-between'>
                 <MediumIcon />
@@ -45,10 +45,10 @@ function Blogs() {
                 </div>
                 </div>
 
-                <h3 className='font-bold font-calibre py-5 text-[#009d68] lext-md lg:text-lg h-[7rem] '>
+                <h3 className='font-bold font-calibre py-5 text-[#009d68] text-md lg:text-lg lg:h-[7rem] '>
                   {item.title}
                 </h3>
-                <p className='h-[10rem]'>
+                <p className='lg:h-[10rem]'>
                   {item.description
                     .replace(/(<([^>]+)>)/gi, '')
                     .substring(0, 150)}
@@ -57,12 +57,12 @@ function Blogs() {
                 <footer className='rounded-lg shadow static bottom-0'>
                   {item.categories.map((skill, ind) => {
                     return (
-                      <span
+                      <div
                         key={ind}
-                        className=' text-white font-light mx-[4px] my-4 py-4 text-[12px] font-mono'
+                        className='lg:inline-block text-white font-light mx-[4px] lg:my-4 py-4 text-[12px] font-mono'
                       >
                         {skill}
-                      </span>
+                      </div>
                     );
                   })}
                 </footer>

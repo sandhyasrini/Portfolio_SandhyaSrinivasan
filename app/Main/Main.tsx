@@ -26,7 +26,7 @@ function Main() {
   return (
     <div>
       <NavbarComponent showNav={showNav}/>
-      <div className={styles.main}>
+      <div className={`${styles.main} md:p-[4rem] px-9 py-[4rem]`}>
       <Landing  />
       <Expertise />
       <Experience />
