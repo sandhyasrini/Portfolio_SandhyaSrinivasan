@@ -25,8 +25,7 @@ const navLinks = [
   },
 ];
 
-const description = `Web application developer with over 6 years of experience, specialized 
-in building digital experiences with the ability to analyse, design and 
+const description = `Senior Web Developer with extensive experience in multiple javascript libraries and frameworks, with the ability to analyse, design and 
 develop highly scalable and quality assured cloud-native applications.`;
 
 const about_me = [
