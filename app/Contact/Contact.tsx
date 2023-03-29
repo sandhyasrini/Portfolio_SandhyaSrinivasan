@@ -16,7 +16,7 @@ function Contact() {
     <section id="contact" ref={ref} className="mt-[7rem] lg:mt-[12rem]">
       {" "}
       <SectionHeading id="04." title="Contact" isInView={isInViewport}/>
-      <p className={`font-thin text-white text-lg sm:m-[4rem] text-justify ${isInViewport && 'animate-[slideup_3s_ease-in-out_1]'}`}>
+      <p className={`font-thin text-white text-lg sm:m-[4rem] text-justify ${isInViewport && 'animate-[slideup_2s_ease-in-out_1]'}`}>
         {contact_me}
         </p>
         <div className="font-semibold sm:m-[2rem] text-[#009d68]">
