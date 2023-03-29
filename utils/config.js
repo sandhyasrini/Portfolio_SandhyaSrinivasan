@@ -34,10 +34,10 @@ const about_me = [
     key: "text",
     text: `I enjoy building dynamic, creative products from scratch. I
     focus on developing intuitive experiences that constantly grow and
-    improve based on metrics. Over the years, I've worked at Wipro
+    improve based on metrics. Over the years I've worked at Wipro
     Digital, I have had the chance to work across multiple stacks and
     technologies. I've gained knowledge in both front-end and
-    backend javascript frameworks like ReactJS, NodeJS, NextJS`,
+    backend javascript frameworks like ReactJS, NodeJS, NextJS.`,
   },
   {
     key: "text",
@@ -46,7 +46,7 @@ const about_me = [
   link_url: 'https://www.credly.com/badges/818c1f5f-17ad-45dd-8a78-73fddc273b3f',
   target: '_blank',
   connector: ` and an `,
-  second_text: ' AWS Certified Developer Associate',
+  second_text: ' AWS Certified Developer Associate.',
   second_url: 'https://www.credly.com/badges/2ede14c3-7d8b-4172-9cfb-377e53a2d249/public_url'
   },
   {
@@ -54,7 +54,7 @@ const about_me = [
     text: `I'm open to Job opportunities where I can contribute, learn and
   grow. If you have a good opportunity that matches my skills and
   experience then don't hesitate to `,
-    link_text: "contact me",
+    link_text: "contact me.",
     link_url: "/#contact",
   },
 ];
