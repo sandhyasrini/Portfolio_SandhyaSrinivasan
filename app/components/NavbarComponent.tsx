@@ -39,11 +39,6 @@ function NavbarComponent({ showNav }: Props) {
                 href={navItem.url}
                 className=" w-[100%] text-white inline-block hover:text-[#009d68] md:hover:text-[#009d69] animate-[slideinMobile_1s_ease-in_1] md:animate-slide-in"
               >
-                <span className="text-[#009d68]">
-                  {" "}
-                  {"0"}
-                  {index + 1}.{" "}
-                </span>
                 {navItem.name}
               </Navbar.Link>
             );
