@@ -36,7 +36,7 @@ function Blogs() {
                 onClick={() => {
                     window.open(item.link);
                   }}
-                className={`rounded border-white border-[1px] m-4 p-7 hover:mt-[5px] cursor-pointer lg:h-[25rem] ${isInViewport && 'animate-[slideup_1s_ease-in-out_1]'}`}
+                className={`rounded border-white border-[1px] m-4 p-7 hover:mt-[5px] cursor-pointer lg:h-[25rem] ${isInViewport && 'animate-[slideup_1.5s_ease-in-out_1]'}`}
               >
                 <div className='text-white w-[100%] grid grid-cols-2 justify-between'>
                 <MediumIcon />
