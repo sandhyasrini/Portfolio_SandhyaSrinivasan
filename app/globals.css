@@ -5,6 +5,18 @@
 @import url('https://fonts.cdnfonts.com/css/calibre');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Shantell+Sans:ital,wght@1,300&display=swap');
 
+@layer base {
+  ::-webkit-scrollbar-thumb{
+  @apply bg-transparent shadow-sm
+  }
+  ::-webkit-scrollbar{
+  @apply w-3 bg-transparent
+  }
+  ::-webkit-scrollbar-thumb{
+  @apply rounded bg-gray-700 w-10 h-10 
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
