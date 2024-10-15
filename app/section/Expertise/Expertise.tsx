@@ -1,10 +1,10 @@
 "use client";
 import React, { useRef } from "react";
-import "../globals.css";
+import "../../globals.css";
 import { about_me } from "@/utils/config";
-import ProgressBarComponent from "../components/ProgressBarComponent";
-import { SectionHeading } from "../components/SectionHeading";
-import { useIsInViewport } from "../components/UseIsInViewPort";
+import ProgressBarComponent from "@/app/common/components/ProgressBarComponent";
+import { SectionHeading } from "@/app/common/components/SectionHeading";
+import { useIsInViewport } from "@/app/common/hooks/useIsInViewPort";
 
 function Expertise() {
   const ref = useRef(null);

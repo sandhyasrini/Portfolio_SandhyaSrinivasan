@@ -1,8 +1,7 @@
 "use client";
 import React from "react";
-import { useState, useEffect } from "react";
-import { Navbar, Button } from "flowbite-react";
-import { navLinks } from "../../utils/config";
+import { Navbar } from "flowbite-react";
+import { navLinks } from "@/utils/config";
 interface Props {
   showNav: boolean;
 }

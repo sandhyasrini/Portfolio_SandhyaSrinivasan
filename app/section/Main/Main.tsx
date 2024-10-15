@@ -1,13 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Blogs from "../Blogs/Blogs";
-import NavbarComponent from "../components/NavbarComponent";
-import SideBarRight from "../components/SideBarRight";
-import Contact from "../Contact/Contact";
-import Experience from "../Experience/Experience";
-import Expertise from "../Expertise/Expertise";
-import Landing from "../Landing/Landing";
-import styles from '../page.module.css'
+import Blogs from "../../Blogs/Blogs";
+import NavbarComponent from "@/app/common/components/NavbarComponent";
+import Contact from "@/app/section/Contact/Contact";
+import Experience from "@/app/section/Experience/Experience";
+import Expertise from "@/app/section/Expertise/Expertise";
+import Landing from "@/app/section/Landing/Landing";
+import styles from '../../page.module.css'
 
 function Main() {
   const [showNav, setShowNav] = useState<boolean>(true);

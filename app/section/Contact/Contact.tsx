@@ -1,12 +1,12 @@
 'use client'
 import React, {useRef} from "react";
-import { SectionHeading } from "../components/SectionHeading";
+import { SectionHeading } from "@/app/common/components/SectionHeading";
 import { contact_me } from "@/utils/config";
-import TwitterIcon from "../components/icons/TwitterIcon";
-import GithubIcon from "../components/icons/GithubIcon";
-import LinkedinIcon from "../components/icons/LinkedinIcon";
-import EmailIcon from "../components/icons/EmailIcon";
-import { useIsInViewport } from "../components/UseIsInViewPort";
+import TwitterIcon from "@/app/common/icons/TwitterIcon";
+import GithubIcon from "@/app/common/icons/GithubIcon";
+import LinkedinIcon from "@/app/common/icons/LinkedinIcon";
+import EmailIcon from "@/app/common/icons/EmailIcon";
+import { useIsInViewport } from "@/app/common/hooks/useIsInViewPort";
 
 function Contact() {
   const ref = useRef(null);

@@ -1,7 +1,7 @@
 'use client';
 import React, { useRef } from 'react';
 import { skills } from '@/utils/config';
-import { useIsInViewport } from './UseIsInViewPort';
+import { useIsInViewport } from '../hooks/useIsInViewPort';
 
 function ProgressBarComponent() {
   const ref = useRef(null);

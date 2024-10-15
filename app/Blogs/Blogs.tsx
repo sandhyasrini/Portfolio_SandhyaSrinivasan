@@ -1,10 +1,10 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import { SectionHeading } from '../components/SectionHeading';
-import { useIsInViewport } from '../components/UseIsInViewPort';
+import { SectionHeading } from '@/app/common/components/SectionHeading';
+import { useIsInViewport } from '@/app/common/hooks/useIsInViewPort';
 import { getMediumStories } from '../api/RestClient';
-import ExternalLink from '../components/icons/ExternalLink';
-import MediumIcon from '../components/icons/MediumIcon';
+import ExternalLink from '@/app/common/icons/ExternalLink';
+import MediumIcon from '@/app/common/icons/MediumIcon';
 import { storiesObject } from '../types';
 
 function Blogs() {
@@ -16,7 +16,7 @@ function Blogs() {
         setStories(data.items);
         setError(false);
       })
-      .catch((error) => {
+      .catch((_error) => {
         setError(true);
       });
   }, []);

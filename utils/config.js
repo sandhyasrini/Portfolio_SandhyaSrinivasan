@@ -68,6 +68,11 @@ const skills = [
     color: '#009d68',
   },
   {
+    name: 'Typescript',
+    skill: '83%',
+    color: '#76bcf6',
+  },
+  {
     name: 'Kubernetes',
     skill: '80%',
     color: '#8FDDE7',
@@ -90,6 +95,18 @@ const skills = [
 ];
 
 const experience = [
+  {
+    title: 'Lead Full Stack Developer, Wipro Digital   July 2023 - Present',
+    location: 'Advantest Europe GmbH, Stuttgart, Germany',
+    summary:
+        'As a frontend developer in an R&D team, I build and optimize product features and internal tools, focusing on usability and performance with the latest technologies.',
+    stacks_used: [
+      'React JS',
+      'Redux Toolkit',
+      'RTK',
+      'Typescript',
+    ],
+  },
   {
     title: 'Lead Full Stack Developer, Wipro Digital   June 2021 - March 2023',
     location: 'Lloyds Banking Group, Remote',

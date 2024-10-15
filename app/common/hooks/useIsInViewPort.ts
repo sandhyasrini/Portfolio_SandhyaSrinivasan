@@ -1,4 +1,4 @@
-import { RefObject, useEffect, useMemo, useRef, useState } from "react";
+import { RefObject, useEffect, useRef, useState } from "react";
 
 export function useIsInViewport(ref: RefObject<HTMLElement>) {
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -15,7 +15,7 @@ export function useIsInViewport(ref: RefObject<HTMLElement>) {
     observer.current = new IntersectionObserver(([entry]) =>
       setIsIntersecting(entry.isIntersecting)
     );
-  }, []); // do this only once, on mountnpm 
+  }, []);
 
   useEffect(() => {
     observer && observer.current.observe(ref.current as Element);

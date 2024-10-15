@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useRef } from "react";
-import { SectionHeading } from "../components/SectionHeading";
+import { SectionHeading } from "@/app/common/components/SectionHeading";
 import { Accordion } from "flowbite-react";
 import { experience } from "@/utils/config";
-import LocationIcon from "../components/icons/LocationIcon";
-import { useIsInViewport } from "../components/UseIsInViewPort";
+import LocationIcon from "@/app/common/icons/LocationIcon";
+import { useIsInViewport } from "@/app/common/hooks/useIsInViewPort";
 
 function Experience() {
   const ref = useRef(null);

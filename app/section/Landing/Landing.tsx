@@ -1,6 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import "../globals.css";
+import React from "react";
+import "../../globals.css";
 import { description, intro } from "@/utils/config";
 
 

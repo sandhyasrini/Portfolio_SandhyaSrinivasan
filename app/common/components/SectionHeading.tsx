@@ -1,5 +1,4 @@
 import React from "react";
-import { SectionName } from "../types";
 
 interface Props {
   id: string;
