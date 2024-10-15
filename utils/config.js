@@ -96,7 +96,7 @@ const skills = [
 
 const experience = [
   {
-    title: 'Lead Full Stack Developer, Wipro Digital   July 2023 - Present',
+    title: 'Front end Developer, Advantest  July 2023 - Present',
     location: 'Advantest Europe GmbH, Stuttgart, Germany',
     summary:
         'As a frontend developer in an R&D team, I build and optimize product features and internal tools, focusing on usability and performance with the latest technologies.',
