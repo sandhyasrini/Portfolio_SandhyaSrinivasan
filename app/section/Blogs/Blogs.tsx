@@ -2,10 +2,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { SectionHeading } from '@/app/common/components/SectionHeading';
 import { useIsInViewport } from '@/app/common/hooks/useIsInViewPort';
-import { getMediumStories } from '../api/RestClient';
+import { getMediumStories } from '../../api/RestClient';
 import ExternalLink from '@/app/common/icons/ExternalLink';
 import MediumIcon from '@/app/common/icons/MediumIcon';
-import { storiesObject } from '../types';
+import { storiesObject } from '../../types';
 
 function Blogs() {
   const [stories, setStories] = useState<storiesObject[] | []>([]);

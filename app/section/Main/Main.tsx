@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Blogs from "../../Blogs/Blogs";
+import Blogs from "@/app/section/Blogs/Blogs";
 import NavbarComponent from "@/app/common/components/NavbarComponent";
 import Contact from "@/app/section/Contact/Contact";
 import Experience from "@/app/section/Experience/Experience";
