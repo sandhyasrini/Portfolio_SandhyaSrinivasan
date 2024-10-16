@@ -8,7 +8,7 @@ export default function Landing() {
   const chars = [...intro];
 
   return (
-    <section className="h-[100%] flex flex-col mx-0 sm:mx-[3rem] my-[6rem]">
+    <section className="h-[85vh] flex flex-col mx-0 sm:mx-[3rem] my-[6rem] align-middle justify-center">
       <div
         id="Home"
         className={`landing font-bold text-3xl sm:text-6xl text-white font-calibre`}
@@ -54,7 +54,7 @@ export default function Landing() {
       </div>
       <a
         href="/#contact"
-        className="text-[#009d68] w-[50%] text-[0.5rem] sm:w-[40%] sm:text-[1rem] sm:text-lg h-[100%] md:w-[20%] transition ease-in-out delay-150 bg-gray border border-[#009d68] focus:outline-none hover:bg-[#009d68] hover:text-white focus:ring-4 hover:-translate-y-1 hover:scale-110 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 align-middle text-center font-calibre"
+        className="text-[#009d68] w-[50%] text-[0.5rem] sm:w-[40%] sm:text-[1rem] sm:text-lg  md:w-[20%] transition ease-in-out delay-150 bg-gray border border-[#009d68] focus:outline-none hover:bg-[#009d68] hover:text-white focus:ring-4 hover:-translate-y-1 hover:scale-110 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 align-middle text-center font-calibre"
       >
         Contact me!
       </a>{" "}
